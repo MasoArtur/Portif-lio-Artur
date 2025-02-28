@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.botões_header{
+    font-size: 30px;
+    margin: 20px 40px 0px 10px;
+    padding: 5px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.cabeçalho_botao{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.estudante{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
