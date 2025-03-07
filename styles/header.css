@@ -1,0 +1,67 @@
+header{
+    height: 17vh;
+    width: 96vw;
+
+    background-color: red;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2vw;
+}
+
+.secao-header{
+    width: 40%;
+    height: 80%;
+
+    background-color: rgb(209, 140, 140);
+
+    align-items: center;
+}
+
+#secao-header_h4{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+
+}
+
+#secao-header_img{
+    width: 6vw;
+    height: 6vw;
+
+    margin: 0 4% 0 0;
+    background-color: rgb(82, 37, 37);
+}
+
+#logo-profissao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header_botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao{
+    width: 30%;
+    height: 50%;
+
+    background-color: aqua;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0 2vw;
+    padding: 0 3vw; 
+}

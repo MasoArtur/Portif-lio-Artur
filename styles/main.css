@@ -1,0 +1,25 @@
+
+
+#img{
+    height: 79vh;
+    width: 40vw;
+
+    position: absolute;
+
+    top: 17vh;
+    left: 35vh;
+
+    background-color: rgb(62, 104, 160);
+}
+
+#nome{
+    height: 56vh;
+    width: 28vw;
+
+    top: 30vh;
+    left: 58%;
+
+    background-color: blue;
+
+    position: absolute;
+}
