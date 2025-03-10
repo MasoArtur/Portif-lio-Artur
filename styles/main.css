@@ -1,15 +1,23 @@
 
-
 #img{
-    height: 79vh;
+    height: 74vh;
     width: 40vw;
 
     position: absolute;
 
-    top: 17vh;
+    top: 19vh;
     left: 35vh;
 
-    background-color: rgb(62, 104, 160);
+    border-radius: 8px;
+    background-color: var(--corPrincipal);
+}
+
+.main_img:hover{
+    box-shadow: 10px 10px 20px var(--corPrincipal);
+}
+
+#img:hover{
+    box-shadow: 10px 10px 20px;
 }
 
 #nome{

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root{
+    --corPrincipal: #113f4e;
+    --corSecundaria:#9ACCFF;
+    --corPreta: #0C1D24;
+    --corBranca: #D2FCEC;
+
+
+    --verde: #64C288;
+
+    --fontePrincipal: 'Inder';
+    --fonteSecundaria: "Inria Sans"
+}
