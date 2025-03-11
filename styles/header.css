@@ -81,17 +81,32 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
+.botao:hover{
+    box-shadow: 2px 2px 4px var(--corPreta);   
 }
 
 #btn-rosa{
     font-size: 30px;
 }
 
+#btn-rosa i{
+    font-size: 20px;
+}
+
 #btn-azul{
     font-size: 30px;
 }
 
+#btn-azul i{
+    font-size: 20px;
+}
+
 #btn-amarelo{
     font-size: 30px;
+}
+
+#btn-amarelo i{
+    font-size: 20px;
 }
