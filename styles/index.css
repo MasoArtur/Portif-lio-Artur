@@ -6,6 +6,15 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100vh;
+    height: 100vw;
+
+    background-image: url("../assets/img/mar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    overflow-y: hidden;
+
 }
 
 

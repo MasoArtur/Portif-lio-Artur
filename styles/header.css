@@ -60,6 +60,7 @@ header{
     align-items: center;
 }
 
+
 #header_botoes{
     display: flex;
     flex-direction: row;
@@ -81,14 +82,24 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .botao:hover{
     box-shadow: 2px 2px 4px var(--corPreta);   
+    transform: scale(1.2);
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #btn-rosa{
     font-size: 30px;
+    background-color: aquamarine;
 }
 
 #btn-rosa i{
@@ -97,6 +108,7 @@ header{
 
 #btn-azul{
     font-size: 30px;
+    background-color: rgb(92, 228, 228);
 }
 
 #btn-azul i{
@@ -105,8 +117,54 @@ header{
 
 #btn-amarelo{
     font-size: 30px;
+    background-color: rgb(37, 193, 138);
 }
 
 #btn-amarelo i{
     font-size: 20px;
 }
+
+/* Cópia */ 
+button {
+    --color: #0077ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+/* Cópia */ 

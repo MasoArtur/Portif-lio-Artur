@@ -5,11 +5,13 @@
 
     position: absolute;
 
-    top: 19vh;
-    left: 35vh;
+    top: 22vh;
+    left: 25vh; /*left 35vh para imgs */
 
     border-radius: 8px;
-    background-color: var(--corPrincipal);
+
+    animation: homer 10s step-start ;
+    animation-iteration-count: infinite;
 }
 
 .main_img:hover{
@@ -21,35 +23,65 @@
 }
 
 .main-text{
-    height: 56vh;
-    width: 28vw;
+    height: 53vh;
+    width: 31vw;
 
-    top: 33vh;
-    left: 62%;
+    top: 12vh;
+    left: 53%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-around;
 
     position: absolute;
 }
 
+
 #nome{
     font-family: var(--fontePrincipal);
-    font-size: 50px;
+    font-size: 120px;
+    font-style: bold;
+
     color: var(--corPrincipal);
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+  
+    position: absolute;
+}
+
+#nome:hover{
+    color: chartreuse;
 }
 
 #sobrenome{
-    margin-top: 0;
+    margin-top: 35vh;
     font-family: var(--fontePrincipal);
-    font-size: 40px;
+    font-size: 90px;
     color: var(--corSecundaria);
 }
 
+#sobrenome:hover{
+    color: darkblue;
+}
+
 #text{
-    font-size: 18px;
+    margin-bottom: 40vh;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
     font-family: var(--fonteSecundaria);
+}
+
+#text:hover{
+    color: cornflowerblue;
+}
+
+@keyframes homer{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.2);
+    }
 }
