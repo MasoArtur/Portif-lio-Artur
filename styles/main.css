@@ -85,3 +85,74 @@
         transform: scale(1.2);
     }
 }
+
+@media(max-width:480px){
+    
+    #img{
+        height: 29vh;
+        width: 60vw;
+    
+        position: absolute;
+    
+        top: 18vh;
+        left: 8vh; /*left 35vh para imgs */
+    
+        border-radius: 4px;
+    
+        animation: homer 10s step-start ;
+        animation-iteration-count: infinite;
+    }
+    
+    .main-text{
+        height: 20vh;
+        width: 100vw;
+        top: 40vh;
+        left: 0%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    #nome{
+            font-family : var(--fontePrincipal);
+            font-size: 18vw;
+            font-style: bold;
+        
+            color: var(--corPrincipal);
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+
+    }
+
+    #sobrenome{
+
+        font-size: 15vw;
+        margin-top: 29vh;
+        color: var(--corSecundaria);
+        font-family: var(--fontePrincipal);
+
+
+    }
+
+    #text{
+        top: 24vh;
+        margin-bottom: 0%;
+
+        left: 4vw;
+        position: absolute;
+        align-items: center;
+        font-size: 2.5vh;
+        margin-right: 5vw;
+        justify-content: center;
+
+    }
+
+
+}

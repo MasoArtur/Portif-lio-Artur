@@ -26,3 +26,18 @@ footer{
 #footer_img:hover{
     transform: scale(1.2);
 }
+
+@media(max-width:480px){
+    #footer_img{
+        top: 5vh;
+
+        height: 4vh;
+        margin-right: 20px;
+        padding-right: 50vw;
+    
+        padding: 20px;
+    
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+}

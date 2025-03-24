@@ -9,7 +9,6 @@ body{
     width: 100vh;
     height: 100vw;
 
-    background-image: url("../assets/img/mar.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -17,6 +16,15 @@ body{
 
 }
 
+
+@media(max-width:480px){
+    body{
+        margin: 0;
+        padding: 0;
+        height: 56vh;
+        width: 100vw;
+    }
+}
 
 /* *{
     margin: 0px;
