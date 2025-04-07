@@ -2,12 +2,13 @@
 @import url(./main.css);
 @import url(./footer.css);
 @import url(./variaveis.css);
+@import url(projetos.css);
 
 body{
     margin: 0;
     padding: 0;
-    width: 100vh;
-    height: 100vw;
+    width: 100vw;
+    height: 100vh;
 
     background-repeat: no-repeat;
     background-size: 100%;

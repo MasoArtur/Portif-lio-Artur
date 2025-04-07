@@ -1,0 +1,11 @@
+#banners{
+    background-color: brown;
+    width: 500vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
