@@ -43,7 +43,7 @@ if(idade >= 55){
     console.log("voce nao é um idoso")
 }*/
 
-let numero = 16;
+/*let numero = 16;
 
 if(numero % 2 === 0){
     console.log("ele é par")
@@ -92,13 +92,61 @@ if(n3 > n4 && n3 > n5){
     console.log("o " + n5 + " é o maior");
 }
 
-/*BISSEXTO */
+/*BISSEXTO */ /*
 let ano = 2018;
 
 if(ano % 4 === 2 ){
     console.log("ele é copa")
 } else{
     console.log("ele não é copa")
-}
+} */
 
 /*a diferença entre um ano bissexto e um ano da copa é 2 */
+
+// for(let n1 = 0; n1 <= 100; n1++){
+//     console.log(n1);
+// }
+
+for(let n1 = 0; n1 < 50; n1++){
+    console.log(n1 + 1);
+}
+
+let n1 = 0;
+while(n1 < 50){
+    n1++;
+    console.log(n1);
+}
+
+let tabuada = 5;
+for(let n2 = 1; n2 <= 10; n2++){
+    let mensagem  = tabuada * n2;
+    console.log(mensagem);
+}
+
+
+for(let n4 = 50; n4 > 0; n4--){
+    console.log(n4 - 1);
+}
+
+let n3 = 0;
+while(n3 < 50){
+    n3--;
+    console.log(n3);
+}
+
+let number = 39;
+for(var i = 0; i <= number; i +=2 ){
+    console.log(i);
+}
+
+// for(var i = 0; i <= 24; i += 2){
+//     console.log(i);
+// }
+
+let n0 = 0
+let blablabla = 12
+while(n0 < blablabla){
+    n0 = n0 + 2;
+    console.log(n0);
+}
+
