@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Artur</title>
     <script src="https://kit.fontawesome.com/b39bb922a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../styles/projetos.css">
+    <script src="./../controller/banner_controller.js"></script>
 </head>
+
 <body>
     <header>
-        <div class ="secao-header">
-        <img id="secao-header_img" src=".././assets/img/img2.jpeg"  alt="">
-        <h4 class ="secao-header" id="secao-header_h4">Estudante de programação</h4>
+        <div class="secao-header">
+            <img id="secao-header_img" src=".././assets/img/img2.jpeg" alt="">
+            <h4 class="secao-header" id="secao-header_h4">Estudante de programação</h4>
         </div>
-        <div class="secao-header" id ="header_botoes">
+        <div class="secao-header" id="header_botoes">
             <button onclick="window.location.href='./index.html'" id="btn-rosa" class="botao">
                 <h6>HOME </h6>
                 <i class="fa-solid fa-house"></i>
             </button>
-            <button onclick= "window.location.href='./projetos.html'" id="btn-azul" class="botao">
+            <button onclick="window.location.href='./projetos.html'" id="btn-azul" class="botao">
                 <h6>PROJETOS</h6>
                 <i class="fa-solid fa-file"></i>
             </button>
@@ -28,13 +31,42 @@
             </button>
         </div>
     </header>
-    
-    <nav id="banners">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </nav>
+    <section id="banner_com_btns">
+        <nav id="banners">
+            <div id="banner1" class="banner">
+                <h1 class="titulo">O futuro te espera</h1>
+                <p class="subtitulo">Não sei oq escrever bryam</p>
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+            <div id="banner2" class="banner">
+                <h1 class="titulo">O futuro te espera</h1>
+                <p class="subtitulo">Não sei oq escrever bryam</p>
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+            <div id="banner3" class="banner">
+                <h1 class="titulo">O futuro te espera</h1>
+                <p class="subtitulo">Não sei oq escrever bryam</p>
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+            <div id="banner4" class="banner">
+                <h1 class="titulo">O futuro te espera</h1>
+                <p class="subtitulo">Não sei oq escrever bryam</p>
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+            <div id="banner5" class="banner">
+                <h1 class="titulo">O futuro te espera</h1>
+                <p class="subtitulo">Não sei oq escrever bryam</p>
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+        </nav>
+        <nav id="btn_banners">
+            <div onclick="girarBanner(0)" id="btn_banner0" class="btn_banner"></div>
+            <div onclick="girarBanner(1)" id="btn_banner1" class="btn_banner"></div>
+            <div onclick="girarBanner(2)" id="btn_banner2" class="btn_banner"></div>
+            <div onclick="girarBanner(3)" id="btn_banner3" class="btn_banner"></div>
+            <div onclick="girarBanner(4)" id="btn_banner4" class="btn_banner"></div>
+        </nav>
+    </section>
 </body>
+
 </html>
