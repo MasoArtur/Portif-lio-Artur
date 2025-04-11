@@ -107,46 +107,85 @@ if(ano % 4 === 2 ){
 //     console.log(n1);
 // }
 
-for(let n1 = 0; n1 < 50; n1++){
-    console.log(n1 + 1);
-}
+// for(let n1 = 0; n1 < 50; n1++){
+//     console.log(n1 + 1);
+// }
 
-let n1 = 0;
-while(n1 < 50){
-    n1++;
-    console.log(n1);
-}
+// let n1 = 0;
+// while(n1 < 50){
+//     n1++;
+//     console.log(n1);
+// }
 
-let tabuada = 5;
-for(let n2 = 1; n2 <= 10; n2++){
-    let mensagem  = tabuada * n2;
-    console.log(mensagem);
-}
+// let tabuada = 5;
+// for(let n2 = 1; n2 <= 10; n2++){
+//     let mensagem  = tabuada * n2;
+//     console.log(mensagem);
+// }
 
 
-for(let n4 = 50; n4 > 0; n4--){
-    console.log(n4 - 1);
-}
+// for(let n4 = 50; n4 > 0; n4--){
+//     console.log(n4 - 1);
+// }
 
-let n3 = 0;
-while(n3 < 50){
-    n3--;
-    console.log(n3);
-}
+// let n3 = 0;
+// while(n3 < 50){
+//     n3--;
+//     console.log(n3);
+// }
 
-let number = 39;
-for(var i = 0; i <= number; i +=2 ){
-    console.log(i);
-}
-
-// for(var i = 0; i <= 24; i += 2){
+// let number = 39;
+// for(var i = 0; i <= number; i +=2 ){
 //     console.log(i);
 // }
 
-let n0 = 0
-let blablabla = 12
-while(n0 < blablabla){
-    n0 = n0 + 2;
-    console.log(n0);
+// // for(var i = 0; i <= 24; i += 2){
+// //     console.log(i);
+// // }
+
+// let n0 = 0
+// let blablabla = 12
+// while(n0 < blablabla){
+//     n0 = n0 + 2;
+//     console.log(n0);
+// }
+
+/*let notas = [9.0, 5.2,7.1,2.3,8.0];// cria vetor
+
+notas.push(4.4); //adiciona 1 item no vetor(no final)
+notas.splice(3,1)
+
+//console.log(notas.length); //(LENGHT)tamanho do vetor
+
+for(let i = 0; i <notas.length; i++){
+    console.log("A nota " + (i+ 1) + " é "+ notas[i]);
+}*/
+
+let vetor = ["artur","alicia","mariana","tariq","diego"];
+
+for(let i = 0; i < 5; i++){
+    console.log("o nome "+ (i + 1)+ " é " + vetor[i]);
 }
 
+let sla = [23, 16, 2.0, 5, 2];
+    for(let i = 0; i < sla.length; i++){
+        if(sla[i] > 10){
+            console.log("os numeros maiores são" + sla[i]);
+        }
+    } 
+    
+let frutas = ["banana","maça","kiwi"];
+    frutas.push("pera", "laranja");
+
+    console.log("o total de frutas é igual a: " + frutas);
+
+let notas = [12, 4, 8, 64, 32];
+let media = 0;
+
+    for(let i = 0; i < notas.length; i++){
+        media += notas[i];
+        // media = media + notas[i]
+    }
+    let soma = media / notas.length;
+
+    console.log(soma);
