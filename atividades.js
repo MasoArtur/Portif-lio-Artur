@@ -161,31 +161,89 @@ for(let i = 0; i <notas.length; i++){
     console.log("A nota " + (i+ 1) + " é "+ notas[i]);
 }*/
 
-let vetor = ["artur","alicia","mariana","tariq","diego"];
+//VETOR
 
-for(let i = 0; i < 5; i++){
-    console.log("o nome "+ (i + 1)+ " é " + vetor[i]);
-}
+// let vetor = ["artur","alicia","mariana","tariq","diego"];
 
-let sla = [23, 16, 2.0, 5, 2];
-    for(let i = 0; i < sla.length; i++){
-        if(sla[i] > 10){
-            console.log("os numeros maiores são" + sla[i]);
-        }
-    } 
+// for(let i = 0; i < 5; i++){
+//     console.log("o nome "+ (i + 1)+ " é " + vetor[i]);
+// }
+
+// let sla = [23, 16, 2.0, 5, 2];
+//     for(let i = 0; i < sla.length; i++){
+//         if(sla[i] > 10){
+//             console.log("os numeros maiores são" + sla[i]);
+//         }
+//     } 
     
-let frutas = ["banana","maça","kiwi"];
-    frutas.push("pera", "laranja");
+// let frutas = ["banana","maça","kiwi"];
+//     frutas.push("pera", "laranja");
 
-    console.log("o total de frutas é igual a: " + frutas);
+//     console.log("o total de frutas é igual a: " + frutas);
 
-let notas = [12, 4, 8, 64, 32];
-let media = 0;
+// let notas = [12, 4, 8, 64, 32];
+// let media = 0;
 
-    for(let i = 0; i < notas.length; i++){
-        media += notas[i];
-        // media = media + notas[i]
+//     for(let i = 0; i < notas.length; i++){
+//         media += notas[i];
+//         // media = media + notas[i]
+//     }
+//     let soma = media / notas.length;
+
+//     console.log(soma);
+
+let livros = [
+    {
+        titulo : "Percy Jackson",
+        autor : "RICK RIORDAN",
+        ano : "2008",
+    },
+];
+livros[0].ano = "2009";
+console.log(livros[0].titulo);
+
+let carro = [
+    {
+        modelo: "sedan",
+        cor: "verde-agua",
+        ano: "1999",
+    },
+];
+
+carro[0].cor = "roxo";
+console.log("A cor do carro é: " + carro[0].cor);
+
+let muie = [
+    {
+        cabelo: "loiro",
+        nivel_brava: "7",
+        beleza: "9",
+    },
+];
+
+console.log(muie[0].nivel_brava);
+
+muie[0].nivel_brava = "9";
+console.log(muie[0].nivel_brava);
+
+let alunos = [
+    {
+        nome: "guilherme",
+        nota: 7,
+    },
+
+    {
+        nome: "alicia",
+        nota: 8,
+    },
+    {
+        nome: "gustavo",
+        nota: 5,
+    },
+];
+
+for(let i = 0; i <alunos.length; i++){ //aqui eu acesso cada aluno, o i começa em 0, que é o indice do primeiro item no array
+    if(alunos[i].nota >= 6){  //aqui acessa os itens nota do array alunos
+      console.log(`os alunos aprovados são:  ${alunos[i].nome}`);
     }
-    let soma = media / notas.length;
-
-    console.log(soma);
+};
