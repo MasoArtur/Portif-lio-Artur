@@ -1,0 +1,87 @@
+@import url(./variaveis.css);
+@import url(./header.css);
+@import url(./index.css);
+@import url(./banner.css);
+
+main{
+    background-color: aqua;
+    width: 100vw;
+    height: 88vh;
+
+    padding-top: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cards_formacao{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+    height: 50%;
+
+    border-radius: 3vw;
+}
+
+.img_formacao{
+    display: flex;
+    align-items: center;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    height: 100%;
+}
+
+.text_formacao{
+    font-size:2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 45%;
+    height: 100%;
+}
+
+#cards_formacao i{
+    color: aliceblue;
+    font-size: 35vh;
+}
+
+#cards_formacao i:hover{
+    transform: scale(1.2);
+    color: black;
+}
+
+#cards_curso{
+    background-color: blueviolet;
+    width: 33%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 3vw;
+}
+
+#cards_curso i{
+    padding-left: 1vw;
+    color: aliceblue;
+    font-size: 25vh;
+}
+
+#cards_curso i:hover{
+    transform: scale(1.2);
+    color: black;
+}
+
+.paragrafo{
+    text-align: center;
+}

@@ -22,4 +22,4 @@ export function createCards(){
     cards_section.appendChild(card);
     });
     
-}
+};
