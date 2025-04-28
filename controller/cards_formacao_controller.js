@@ -1,76 +1,83 @@
-let formacao = [
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-];
+import { bd_cards_formacao_formacao } from "./../model/cards_formacao_bd.js";
+import { bd_cards_formacao_curso } from "./../model/cards_formacao_bd.js";
+// let curso = [
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+//     {
+//         imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
+//     },
+// ];
 
-let curso = [
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-    {
-        imagem: "fa-solid fa-image", titulo: "Formacao", sobretitulo: "tempo", paragrafo: "descrição da sua formação",
-    },
-];
-
-function createCardsFormacao(){
+export function createCardsFormacao(){
     let cards_sectio_formacao = document.getElementById("cards_formacao");
     let cards_section_cursos = document.getElementById("cards_curso");
 
-    for(let i = 0; i <formacao.length; i++){
-    let formacao_imagem = document.createElement('div');
-    formacao_imagem.className = 'img_formacao';
+    bd_cards_formacao_formacao.map( (card_formacao)=>{
+
+    let formacao_card = document.createElement('div'); //cria o card
+    formacao_card.className = 'formacao_card'; //cria uma div com nome img_formacao
 
     let imagem = document.createElement('i');
-    imagem.className = formacao[i].imagem; //vai passar em todas as (imagem) do vetor Usa Font Awesome pra mostrar o ícone
+    imagem.className = card_formacao.imagem; //vai passar em todas as (imagem) do vetor Usa Font Awesome pra mostrar o ícone
 
     let titulo = document.createElement('h1');
-    titulo.className = formacao[i].titulo;
+    titulo.textContent = card_formacao.titulo;
 
     let subtitulo = document.createElement('h4');
-    subtitulo.className = formacao[i].sobretitulo;
+    subtitulo.textContent = card_formacao.sobretitulo;
 
     let paragrafo = document.createElement('p');
-    paragrafo.className = formacao[i].paragrafo;
+    paragrafo.textContent = card_formacao.paragrafo;
 
     // appendchild = adiciona os elementos dentro do card
-        cards_sectio_formacao.appendChild(icone); //adiciona o icone dentro da secao cards_formacao
+        cards_sectio_formacao.appendChild(imagem); //adiciona o icone dentro da secao cards_formacao
         cards_sectio_formacao.appendChild(titulo);
         cards_sectio_formacao.appendChild(subtitulo);
         cards_sectio_formacao.appendChild(paragrafo);
-    }
+        // e por fim coloca o card inteiro dentro da seção;
+        cards_sectio_formacao.appendChild(formacao_card);  
+    });
+    
+        bd_cards_formacao_curso.map( (card_curso)=>{
+
+        let curso_card = document.createElement('div');
+        curso_card.className = 'curso_card';
+
+        let imagem_curso = document.createElement('i');
+        imagem_curso.className = card_curso.imagem; //vai passar em todas as imagens do vetor 
+
+        let titulo_curso = document.createElement('h1');
+        titulo_curso.textContent = card_curso.titulo;
+
+        let subtitulo_curso = document.createElement('h4');
+        subtitulo_curso.textContent = card_curso.sobretitulo;
+
+        let paragrafo_curso = document.createElement('p');
+        paragrafo_curso.textContent = card_curso.paragrafo;
+
+        // appendChild adiciona os elementos dentro do card
+        cards_section_cursos.appendChild(imagem_curso);
+        cards_section_cursos.appendChild(titulo_curso);
+        cards_section_cursos.appendChild(subtitulo_curso);
+        cards_section_cursos.appendChild(paragrafo_curso);
+        // e por fim coloca o card inteiro dentro da seção
+        cards_section_cursos.appendChild(curso_card);
+    });
 
 }
