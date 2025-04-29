@@ -46,10 +46,10 @@ export function createCardsFormacao(){
     paragrafo.textContent = card_formacao.paragrafo;
 
     // appendchild = adiciona os elementos dentro do card
-        cards_sectio_formacao.appendChild(imagem); //adiciona o icone dentro da secao cards_formacao
-        cards_sectio_formacao.appendChild(titulo);
-        cards_sectio_formacao.appendChild(subtitulo);
-        cards_sectio_formacao.appendChild(paragrafo);
+        formacao_card.appendChild(imagem); //adiciona o icone dentro da secao cards_formacao
+        formacao_card.appendChild(titulo);
+        formacao_card.appendChild(subtitulo);
+        formacao_card.appendChild(paragrafo);
         // e por fim coloca o card inteiro dentro da seção;
         cards_sectio_formacao.appendChild(formacao_card);  
     });
@@ -72,10 +72,10 @@ export function createCardsFormacao(){
         paragrafo_curso.textContent = card_curso.paragrafo;
 
         // appendChild adiciona os elementos dentro do card
-        cards_section_cursos.appendChild(imagem_curso);
-        cards_section_cursos.appendChild(titulo_curso);
-        cards_section_cursos.appendChild(subtitulo_curso);
-        cards_section_cursos.appendChild(paragrafo_curso);
+        curso_card.appendChild(imagem_curso);
+        curso_card.appendChild(titulo_curso);
+        curso_card.appendChild(subtitulo_curso);
+        curso_card.appendChild(paragrafo_curso);
         // e por fim coloca o card inteiro dentro da seção
         cards_section_cursos.appendChild(curso_card);
     });

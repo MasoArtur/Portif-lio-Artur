@@ -1,4 +1,54 @@
+main{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2vw;
+    padding: 4vh;
+}
 
+#cards_formacao{
+    padding-left: 2vw;
+    width: 50vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+#cards_curso{
+    width: 50vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+.formacao_card {
+    width: 50vw;
+    height: 30vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+
+.formacao_card i{
+    font-size: 15vh;
+}
+
+.curso_card{
+    width:43vw;
+    height: 30vh;
+    display: flex;
+    background-color: wheat;
+    margin-bottom: 2vh;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.curso_card i{
+    font-size: 15vh;
+}
+
+/* 
 main{
     background-color: aqua;
     width: 100vw;
@@ -9,17 +59,6 @@ main{
     justify-content: space-around;
 }
 
-#cards_formacao{
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 55%;
-    height: 50%;
-
-    border-radius: 3vw;
-}
 
 .img_formacao{
     display: flex;
@@ -77,4 +116,4 @@ main{
 
 .paragrafo{
     text-align: center;
-}
+} */
