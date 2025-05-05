@@ -1,51 +1,60 @@
 main{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 4vh;
-}
-
-#cards_formacao{
-    padding-left: 2vw;
-    width: 50vw;
-    height: 100vh;
-    background-color: blue;
-}
-
-#cards_curso{
-    width: 50vw;
-    height: 100vh;
-    background-color: blue;
+    background-color:#e0f7fa;
 }
 
 .formacao_card {
-    width: 50vw;
+    width: 60vw;
     height: 30vh;
-    background: white;
+    background: rgb(101, 159, 173);
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 2vh;
     border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
+    background-image: url(https://osteokids.com.br/wp-content/uploads/2018/10/icon-especializados.png);
+    background-repeat: no-repeat;
+}
+
+.formacao_card i:hover{
+    transform: scale(1.6);
 }
 
 .formacao_card i{
     font-size: 15vh;
 }
 
+.textos_formacao{
+    color: brown;
+}
+
 .curso_card{
-    width:43vw;
+    width:33vw;
     height: 30vh;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: wheat;
     margin-bottom: 2vh;
     border-radius: 1vw;
-    align-items: center;
-    justify-content: space-around;
+    transition: transform 0.1s ease-in-out;
+}
+
+.curso_card i:hover{
+    transform: scale(1.2);
 }
 
 .curso_card i{
     font-size: 15vh;
+}
+
+.textos_cursos{
+    color: cornflowerblue;
 }
 
 /* 

@@ -1,4 +1,4 @@
-import { createCards } from "./cards_controller.js";
+import { createCards } from "./cards_projetos_controller.js";
 
 document.addEventListener("DOMContentLoaded", () =>{
     createCards();

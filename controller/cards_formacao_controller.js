@@ -24,43 +24,50 @@ import { bd_cards_formacao_curso } from "./../model/cards_formacao_bd.js";
 //     },
 // ];
 
-export function createCardsFormacao(){
+export function createCardsFormacao() {
     let cards_sectio_formacao = document.getElementById("cards_formacao");
     let cards_section_cursos = document.getElementById("cards_curso");
 
-    bd_cards_formacao_formacao.map( (card_formacao)=>{
+    bd_cards_formacao_formacao.map((card_formacao) => {
 
-    let formacao_card = document.createElement('div'); //cria o card
-    formacao_card.className = 'formacao_card'; //cria uma div com nome img_formacao
+        let formacao_card = document.createElement('div'); //cria o card
+        formacao_card.className = 'formacao_card'; //cria uma div com nome img_formacao
 
-    let imagem = document.createElement('i');
-    imagem.className = card_formacao.imagem; //vai passar em todas as (imagem) do vetor Usa Font Awesome pra mostrar o ícone
+        let imagem = document.createElement('i');
+        imagem.className = card_formacao.imagem; //vai passar em todas as (imagem) do vetor Usa Font Awesome pra mostrar o ícone
 
-    let titulo = document.createElement('h1');
-    titulo.textContent = card_formacao.titulo;
+        let div_textos = document.createElement('div');
+        div_textos.className = 'textos_formacao';
 
-    let subtitulo = document.createElement('h4');
-    subtitulo.textContent = card_formacao.sobretitulo;
+        let titulo = document.createElement('h1');
+        titulo.textContent = card_formacao.titulo;
 
-    let paragrafo = document.createElement('p');
-    paragrafo.textContent = card_formacao.paragrafo;
+        let subtitulo = document.createElement('h4');
+        subtitulo.textContent = card_formacao.sobretitulo;
 
-    // appendchild = adiciona os elementos dentro do card
+        let paragrafo = document.createElement('p');
+        paragrafo.textContent = card_formacao.paragrafo;
+
+        // appendchild = adiciona os elementos dentro do card
         formacao_card.appendChild(imagem); //adiciona o icone dentro da secao cards_formacao
-        formacao_card.appendChild(titulo);
-        formacao_card.appendChild(subtitulo);
-        formacao_card.appendChild(paragrafo);
+        div_textos.appendChild(titulo);
+        div_textos.appendChild(subtitulo);
+        div_textos.appendChild(paragrafo);
+        formacao_card.appendChild(div_textos);
         // e por fim coloca o card inteiro dentro da seção;
-        cards_sectio_formacao.appendChild(formacao_card);  
+        cards_sectio_formacao.appendChild(formacao_card);
     });
-    
-        bd_cards_formacao_curso.map( (card_curso)=>{
+
+    bd_cards_formacao_curso.map((card_curso) => {
 
         let curso_card = document.createElement('div');
         curso_card.className = 'curso_card';
 
         let imagem_curso = document.createElement('i');
         imagem_curso.className = card_curso.imagem; //vai passar em todas as imagens do vetor 
+
+        let div_textos_cursos = document.createElement('div');
+        div_textos_cursos.className = 'textos_cursos';
 
         let titulo_curso = document.createElement('h1');
         titulo_curso.textContent = card_curso.titulo;
@@ -73,9 +80,10 @@ export function createCardsFormacao(){
 
         // appendChild adiciona os elementos dentro do card
         curso_card.appendChild(imagem_curso);
-        curso_card.appendChild(titulo_curso);
-        curso_card.appendChild(subtitulo_curso);
-        curso_card.appendChild(paragrafo_curso);
+        div_textos_cursos.appendChild(titulo_curso);
+        div_textos_cursos.appendChild(subtitulo_curso);
+        div_textos_cursos.appendChild(paragrafo_curso);
+        curso_card.appendChild(div_textos_cursos);
         // e por fim coloca o card inteiro dentro da seção
         cards_section_cursos.appendChild(curso_card);
     });

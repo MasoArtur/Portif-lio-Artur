@@ -1,51 +1,47 @@
 
 #img{
-    height: 74vh;
+    height: 68vh;
     width: 40vw;
-
+    margin-top: 10vh;
     position: absolute;
 
-    top: 22vh;
-    left: 25vh; /*left 35vh para imgs */
+    top: 10vh;
+    left: 10vh; /*left 35vh para imgs */
 
-    border-radius: 8px;
+    border-radius: 2vh;
 
-    animation: homer 10s step-start ;
-    animation-iteration-count: infinite;
-}
-
-.main_img:hover{
-    box-shadow: 10px 10px 20px var(--corPrincipal);
+    animation: homer 10s step-start infinite;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 #img:hover{
-    box-shadow: 10px 10px 20px;
+    box-shadow: 1vw 1vw 2vw var(--corPrincipal);
 }
 
 .main-text{
-    height: 53vh;
-    width: 31vw;
+    height: 40vh;
+    width: 40vw;
 
-    top: 12vh;
-    left: 53%;
+    top: 20vh;
+    left: 5vw;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items: start;
+    justify-content: space-between;
 
     position: absolute;
 }
 
-
 #nome{
     font-family: var(--fontePrincipal);
-    font-size: 120px;
-    font-style: bold;
+    font-size: 10vh;
+    font-weight: bold;
 
     color: var(--corPrincipal);
-    margin-bottom: 0px;
+    margin-bottom: 10vh;
   
+    transition: color 0.3s;
     position: absolute;
 }
 
@@ -54,10 +50,12 @@
 }
 
 #sobrenome{
-    margin-top: 35vh;
+    padding-top: 10vh;
     font-family: var(--fontePrincipal);
-    font-size: 90px;
+    font-size: 8vh;
     color: var(--corSecundaria);
+    transition: color 0.3s;
+    margin-bottom: 2vh;
 }
 
 #sobrenome:hover{
@@ -65,12 +63,14 @@
 }
 
 #text{
-    margin-bottom: 40vh;
-    justify-content: center;
-    align-items: center;
 
-    font-size: 28px;
+    /* justify-content: center;
+    align-items: center; */
+    color: aliceblue;
+    padding-right: 2vw;
+    font-size: 2.2vh;
     font-family: var(--fonteSecundaria);
+    line-height: 1.5;
 }
 
 #text:hover{

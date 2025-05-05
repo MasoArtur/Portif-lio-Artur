@@ -1,5 +1,5 @@
 export const bd_cards_projetos = [
-    { titulo: "Smartphone Samsung Galaxy A15 128GB", preco: "1.299,00" },
+    { titulo: "Smartphone Samsung Galaxy A15 128GB", preco: "1.299,00", img: "https:app.lojasnossolar.com.br/images/nossolar/produtos/17527/071911_242391_P1000.jpg"},
     { titulo: "Notebook Acer Aspire 5 Intel Core i5 8GB RAM", preco: "2.799,99" },
     { titulo: "Fone de Ouvido Bluetooth JBL Tune 510BT", preco: "199,90" },
     { titulo: "Cadeira Gamer ThunderX3 EC3", preco: "899,00" },
