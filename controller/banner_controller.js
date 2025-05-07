@@ -17,7 +17,7 @@ function girarBanner(n_banner){
     bannerAtual = n_banner;
 }
 
-setInterval ((  ) => {
+setInterval (() => {
     let proximo = (bannerAtual + 1 ) % totalBanners;
     girarBanner(proximo);
 }, 3000);

@@ -1,0 +1,10 @@
+@import url(./../variaveis.css);
+@import url(./../header.css);
+@import url(./../index/index.css);
+@import url(./../projetos/banner.css);
+@import url(./../projetos/cards.css);
+
+ body{
+    overflow-x: hidden;
+    overflow-y: auto;
+} 
