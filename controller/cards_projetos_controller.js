@@ -1,8 +1,9 @@
+import { getProjects } from "../services/projects_services.js";
 
-import { bd_cards_projetos } from "../model/cards_projetos_bd.js";
-
-export function createCards(){
+export async function createCards(){
     let cards_section = document.getElementById("cards");
+
+    const bd_cards_projetos = await getProjects();
 
     bd_cards_projetos.map( (card_bd)=>{
         
