@@ -1,4 +1,3 @@
-
 export async function getProjects(){
     try{
     let response = await fetch('http://localhost:3000/projetos'); 
